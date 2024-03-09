@@ -30,20 +30,20 @@ body {
 
 /* Navigation styles */
 nav {
-    background-color: #000000; /* Set the background color */
+    background-color: #000000; 
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Make the navigation bar span the entire width */
+    width: 100%; 
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px 0; /* Add some padding for better spacing */
+    padding: 10px 0; 
     text-align: center;
-    display: flex; /* Use flexbox */
-    justify-content: space-around; /* Evenly space items */
+    display: flex;
+    justify-content: space-around; 
 }
 
 nav ul li {
@@ -52,14 +52,14 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 10px 20px; 
     text-decoration: none;
     color: white;
-    border-radius: 5px; /* Add some rounded corners for aesthetics */
+    border-radius: 5px; 
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Set background color on hover */
+    background-color: #555; 
 }
 
 /* Section styles */
@@ -88,10 +88,10 @@ body, html {
 }
 
 .Circle-Pic {
-    border-radius: 50%; /* Make the image circular */
-    width: 150px; /* Set the desired width */
-    height: 150px; /* Set the desired height */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
     position: absolute;
     display: block;
     top: 90px; 
