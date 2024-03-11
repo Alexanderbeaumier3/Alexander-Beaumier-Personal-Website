@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Beaumier - Personal Website</title>
     <link rel="stylesheet" href="css/Styles2.css"> 
+    <style>
+        /* CSS for the drop boxes */
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .side {
+            width: 48%; /* Adjust as needed */
+        }
+        .fun-fact, .bucket-list-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .fun-fact:hover, .bucket-list-item:hover {
+            background-color: #e9e9e9;
+        }
+        .fun-fact p, .bucket-list-item p {
+            display: none; /* Hide the content by default */
+        }
+        .fun-fact.active p, .bucket-list-item.active p {
+            display: block; /* Show the content when the box is active */
+        }
+    </style>
 </head>
 <body>
 
@@ -20,18 +48,55 @@
     <!-- Bio Page -->
     <section id="bio">
         <div class="container">
-            <h1>About me</h1>
-            <p>Cloud engineer apprentice at Deloitte. My business area is within Core Business Offering in the industry of Government and Public Services.</p>
-            <p>Proficient in AWS, Javascript, HTML, Git, and Github. My interests are in cybersecurity and cloud networking. </p>
-            <p>I love spending time with my wife and traveling the world. I also enjoy playing basketball and researching various topics such as money management, stocks, astronomy, criminal justice and archaeological discoveries.</p>
-            <h3>Fun Facts</h3>
-            <p>I married my highschool sweetheart</p>
-            <p>I am the oldest of 3 boys</p>
-            <p>I want to travel to every continent and every state in the united states</p>
-            <p>I am obsessed with chicken wings</p>
+            <!-- Left side for fun facts -->
+            <div class="side">
+                <h1>About me</h1>
+                <p>Cloud engineer apprentice at Deloitte. My business area is within Core Business Offering in the industry of Government and Public Services.</p>
+                <p>Proficient in AWS, Javascript, HTML, Git, and Github. My interests are in cybersecurity and cloud networking. </p>
+                <p>I love spending time with my wife and traveling the world. I also enjoy playing basketball and researching various topics such as money management, stocks, astronomy, criminal justice and archaeological discoveries.</p>
+                <h3>Fun Facts</h3>
+                <!-- Drop boxes for fun facts -->
+                <div class="fun-fact" onclick="toggleFact(this)">
+                    <h4>Marriage</h4>
+                    <p>I married my highschool sweetheart</p>
+                </div>
+                <div class="fun-fact" onclick="toggleFact(this)">
+                    <h4>Siblings</h4>
+                    <p>I am the oldest of 3 boys</p>
+                </div>
+                <div class="fun-fact" onclick="toggleFact(this)">
+                    <h4>Traveling</h4>
+                    <p>I have been to 13 states and 5 countries</p>
+                </div>
+                <div class="fun-fact" onclick="toggleFact(this)">
+                    <h4>Favorite food</h4>
+                    <p>I am obsessed with chicken wings</p>
+                </div>
+            </div>
+            <!-- Right side for bucket list -->
+            <div class="side">
+                <h3>Bucket List</h3>
+                <!-- Drop boxes for bucket list items -->
+                <div class="bucket-list-item" onclick="toggleFact(this)">
+                    <h4>Finance</h4>
+                    <p>I strive to be the first millionaire in my family</p>
+                </div>
+                <div class="bucket-list-item" onclick="toggleFact(this)">
+                    <h4>Music</h4>
+                    <p>I want to learn to play saxophone and piano</p>
+                </div>
+                <div class="bucket-list-item" onclick="toggleFact(this)">
+                    <h4>Travel</h4>
+                    <p>I want to travel to every continent</p>
+                </div>
+                <div class="bucket-list-item" onclick="toggleFact(this)">
+                    <h4>Family</h4>
+                    <p>I want to have 3+ children</p>
+                </div>
+            </div>
         </div>
     </section>
 
-
+    <script src="script2.js"></script>
 </body>
 </html>
