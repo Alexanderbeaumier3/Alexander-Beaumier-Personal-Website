@@ -42,7 +42,7 @@ nav ul {
     margin: 0;
     padding: 10px 0; 
     text-align: center;
-    display: flex;
+    display: flex; 
     justify-content: space-around; 
 }
 
@@ -59,8 +59,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555; 
+    background-color: rgb(201, 162, 33); 
 }
+
 
 /* Section styles */
 section {
